@@ -1,0 +1,58 @@
+/* Contact */
+.contact {
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__link {
+		display: flex;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		align-items: center;
+		color: var(--desc-text-color);
+
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+
+		transition: var(--transition-color);
+	}
+
+	&__link:hover,
+	&__link :focus {
+		color: var(--accent-color);
+	}
+
+	&__icon {
+		margin-right: 10px;
+		fill: currentColor;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__link {
+		display: flex;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		align-items: center;
+		color: var(--desc-text-color);
+
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+
+		transition: var(--transition-color);
+	}
+
+	&__link:hover,
+	&__link :focus {
+		color: var(--accent-color);
+	}
+
+	&__icon {
+		margin-right: 10px;
+		fill: currentColor;
+	}
+}

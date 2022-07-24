@@ -1,0 +1,31 @@
+/* Address */
+
+.address{
+
+&__link {
+        color: var(--address-text-color);
+    }
+
+    &__link--lighter-color {
+        color: var(--light-text-color);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        font-style: normal;
+        line-height: 1.71;
+
+        letter-spacing: var(--primary-letter-spacing);
+        transition: var(--transition-color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+
+}
+

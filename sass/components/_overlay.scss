@@ -1,0 +1,31 @@
+/* Overlay */
+
+.overlay {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	font-size: 18px;
+	line-height: 1.56;
+	color: var(--light-text-color);
+	background: rgba(33, 150, 243, 0.9);
+
+	transition: transform var(--anim-fast);
+	transform: translateY(100%);
+	overflow: hidden;
+
+
+	&__text {
+		width: 322px;
+	}
+
+	.portfolio__link:hover &,
+	.portfolio__link:focus & {
+		transform: none;
+	}
+}

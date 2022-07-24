@@ -1,0 +1,19 @@
+/* Header */
+
+.header {
+	&__container {
+		display: flex;
+	}
+
+	&__logo {
+		margin-right: 93px;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+
+	&__contact {
+		display: flex;
+		margin-left: auto;
+		align-items: center;
+	}
+}

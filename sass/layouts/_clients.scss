@@ -1,0 +1,44 @@
+/* Clients */
+
+.clients {
+	@extend %section;
+
+	&__title {
+		@include title();
+
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 170px;
+		height: 92px;
+
+		color: var(--primary-icon-color);
+		border: 1px solid var(--primary-icon-color);
+		border-radius: 4px;
+
+		transition: var(--transition-color), border-color var(--anim-fast);
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+
+	&__icon {
+		fill: currentColor;
+	}
+}
