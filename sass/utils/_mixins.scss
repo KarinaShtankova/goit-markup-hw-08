@@ -1,11 +1,11 @@
-@mixin title($fs, $lh) {
+@mixin title($fs: 28px, $lh: 1.18) {
 	font-size: $fs;
 	line-height: $lh;
 	text-align: center;
 	letter-spacing: var(--primary-letter-spacing);
 }
 
-@mixin section($pt, $pb) {
+@mixin section($pt: 60px, $pb: 60px) {
 	padding-top: $pt;
 	padding-bottom: $pb;
 }

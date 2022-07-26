@@ -6,14 +6,14 @@
 	margin-right: auto;
 
 	@media screen and (min-width: $mobile) {
-		max-width: calc($mobile - 15px * 2);
+		max-width: calc($mobile);
 	}
 
 	@media screen and (min-width: $tablet) {
-		max-width: calc($tablet - 15px * 2);
+		max-width: calc($tablet);
 	}
 
 	@media screen and (min-width: $desktop) {
-		max-width: calc($desktop - 15px * 2);
+		max-width: calc($desktop);
 	}
 }

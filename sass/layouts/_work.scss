@@ -8,9 +8,14 @@
 	padding-top: 0;
 
 	&__title {
-		@include title();
 
-		margin-bottom: 50px;
+				@include title(28px, 1.18);
+					margin-bottom: 30px;
+				
+					@media screen and (min-width: $desktop) {
+						@include title(36px, 1.17);
+						margin-bottom: 50px;
+					}
 	}
 
 	&__list {
