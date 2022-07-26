@@ -1,13 +1,14 @@
 /* Work */
 .work {
-    
-    @extend %section;
+	@media screen and (max-width: calc($desktop - 1px)) {
+		display: none;
+	}
 
+	@include section(94px, 94px);
 	padding-top: 0;
 
 	&__title {
-
-    @include title();
+		@include title();
 
 		margin-bottom: 50px;
 	}
