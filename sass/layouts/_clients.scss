@@ -1,44 +1,62 @@
 /* Clients */
 
 .clients {
-	// @extend %section;
+	@include section(60px, 60px);
+
+	@media screen and (min-width: $desktop) {
+		@include section(94px, 94px);
+	}
 
 	&__title {
-		@include title();
+		@include title(28px, 1.18);
+		margin-bottom: 30px;
 
-	margin-bottom: 50px;
-}
+		@media screen and (min-width: $desktop) {
+			@include title(36px, 1.17);
+			margin-bottom: 50px;
+		}
+	}
 
-&__list {
-	display: flex;
-}
+		&__list {
+			--items: 2;
+	
+			@media screen and (min-width: $tablet) {
+				--items: 3;
+			}
+	
+			@media screen and (min-width: $desktop) {
+				--items: 6;
+			}
+	
+			// display: flex;
+		}
 
-&__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	width: 170px;
-	height: 92px;
+		// width: 170px;
+		height: 92px;
 
-	color: var(--primary-icon-color);
-	border: 1px solid var(--primary-icon-color);
-	border-radius: 4px;
+		color: var(--primary-icon-color);
+		border: 1px solid var(--primary-icon-color);
+		border-radius: 4px;
 
-	transition: var(--transition-color), border-color var(--anim-fast);
-}
+		transition: var(--transition-color), border-color var(--anim-fast);
+	}
 
-&__item:not(:last-child) {
-	margin-right: 30px;
-}
+	// &__item:not(:last-child) {
+	// 	margin-right: 30px;
+	// }
 
-&__link:hover,
-&__link:focus {
-	color: var(--accent-color);
-	border-color: var(--accent-color);
-}
+	&__link:hover,
+	&__link:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
 
-&__icon {
-	fill: currentColor;
-}
+	&__icon {
+		fill: currentColor;
+	}
 }
