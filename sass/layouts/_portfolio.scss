@@ -1,15 +1,46 @@
 /* Portfolio section*/
 
 .portfolio {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@include section(60px, 60px);
+
+	@media screen and (min-width: $desktop) {
+		@include section(94px, 94px);
+	}
 	border-top: 1px solid #ececec;
 
 	&__btn-list {
 		display: flex;
-		margin-bottom: 34px;
-		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+
+		@media screen and (min-width: $tablet) {
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			justify-content: center;
+			margin-bottom: 50px;
+		}
 	}
+
+
+		&__card-set {
+			--items: 1;
+	
+			@media screen and (min-width: $tablet) {
+				--items: 2;
+
+			}
+	
+			@media screen and (min-width: $desktop) {
+				--items: 3;
+			}
+		}
+
+
+
+
 
 	&__link {
 		display: block;
@@ -27,10 +58,15 @@
 	}
 
 	&__box {
+
 		padding: 20px 24px;
 
 		border: 1px solid #eeeeee;
 		border-top: none;
+
+				@media screen and (min-width:$tablet) and (max-width: calc($desktop - 1px)) {
+						min-height: 146px;
+					}
 	}
 
 	&__subtitle {

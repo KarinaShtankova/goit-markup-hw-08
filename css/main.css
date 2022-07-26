@@ -332,6 +332,11 @@ img {
 .btn-list__item:not(:last-child) {
   margin-right: 8px;
 }
+@media screen and (max-width: 767px) {
+  .btn-list__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
 
 /* Secondary Button */
 .secondary-btn {
@@ -389,7 +394,17 @@ img {
   overflow: hidden;
 }
 .overlay__text {
-  width: 322px;
+  width: 402px;
+}
+@media screen and (min-width: 768px) {
+  .overlay__text {
+    width: 306px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay__text {
+    width: 322px;
+  }
 }
 .portfolio__link:hover .overlay, .portfolio__link:focus .overlay {
   -webkit-transform: none;
@@ -1108,18 +1123,52 @@ img {
 
 /* Portfolio section*/
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio__btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 34px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__btn-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__btn-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.portfolio__card-set {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__card-set {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__card-set {
+    --items: 3;
+  }
 }
 .portfolio__link {
   display: block;
@@ -1140,6 +1189,11 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__box {
+    min-height: 146px;
+  }
 }
 .portfolio__subtitle {
   margin-bottom: 4px;

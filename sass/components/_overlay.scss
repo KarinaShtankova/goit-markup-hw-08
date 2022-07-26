@@ -21,7 +21,17 @@
 
 
 	&__text {
-		width: 322px;
+    width: 402px;
+
+				@media screen and (min-width: $tablet) {
+							width: 306px;;
+					}
+				
+					@media screen and (min-width: $desktop) {
+							width: 322px;
+					}
+
+	
 	}
 
 	.portfolio__link:hover &,
