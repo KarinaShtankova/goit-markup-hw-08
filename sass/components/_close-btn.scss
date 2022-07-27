@@ -1,6 +1,7 @@
 /* Close-btn */
 
 .close-btn {
+        position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,4 +16,6 @@
     cursor: pointer;
 
     transition: var(--transition-color);
+
+
 }

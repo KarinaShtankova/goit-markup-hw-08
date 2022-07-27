@@ -30,6 +30,7 @@
 }
 
 .modal {
+	position: relative;
 	padding: 40px;
 
 	background: #ffffff;
@@ -53,9 +54,10 @@
 }
 
 .modal__close-btn {
-	position: absolute;
+
 	top: 8px;
 	right: 8px;
+
 }
 
 .modal-form-subtitle {
@@ -113,6 +115,7 @@
 	transition: var(--transition-color);
 }
 
+
 .modal-form-textarea {
 	margin-bottom: 20px;
 	padding: 12px;
@@ -122,8 +125,8 @@
 	transition: var(--transition-color), border-color var(--anim-fast);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus,
+.modal__close-btn:hover,
+.modal__close-btn:focus,
 .modal-form-field:focus-within {
 	color: var(--accent-color);
 }

@@ -1,6 +1,8 @@
 /* Header */
 
 .header {
+position: relative;
+
 	&__container {
 		display: flex;
 	}
@@ -16,4 +18,22 @@
 		margin-left: auto;
 		align-items: center;
 	}
+
+	&__menu-container{
+
+		@media screen and  (max-width: calc($tablet - 1px)){
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: var(--main-background-color);
+		}
+
+
+}
+	&__menu-container.is-open{
+	display: block;
+	}
+	
 }

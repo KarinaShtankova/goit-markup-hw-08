@@ -1,0 +1,25 @@
+/* Button menu */
+
+.btn-menu {
+	// display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	&__icon-cross {
+		display: none;
+	}
+
+	&.is-open &__icon-cross {
+		display: block;
+	}
+
+	&.is-open &__icon-burger {
+		display: none;
+	}
+
+    @media screen and  (min-width: $tablet){
+        display: none;
+    }
+}
