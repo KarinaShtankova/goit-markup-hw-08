@@ -64,7 +64,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1031,30 +1031,35 @@ img {
 
 .footer-form-input::-webkit-input-placeholder {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--address-text-color);
 }
 
 .footer-form-input::-moz-placeholder {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--address-text-color);
 }
 
 .footer-form-input:-ms-input-placeholder {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--address-text-color);
 }
 
 .footer-form-input::-ms-input-placeholder {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--address-text-color);
 }
 
 .footer-form-input::placeholder {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--address-text-color);
 }
