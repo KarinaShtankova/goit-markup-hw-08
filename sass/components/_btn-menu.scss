@@ -7,7 +7,12 @@
 	border: none;
 	background-color: transparent;
 	z-index: 10;
+	transition: fill var(--anim-fast) ;
 
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
 	&__icon-cross {
 		display: none;
 	}
