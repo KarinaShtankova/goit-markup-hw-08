@@ -1,0 +1,34 @@
+/* Mobile menu */
+
+.mobile-menu {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+    transform: translate(100%);
+
+	width: 100%;
+	height: 100%;
+	padding: 48px 40px;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--secondary-background-color);
+	z-index: 1;
+
+    transition: transform var(--anim-fast);
+
+    &.is-open{
+        transform: translate(0);
+    }
+                @media screen and (min-width: $tablet) {
+                    display: none;
+                }
+	&__mobile-nav {
+		margin-bottom: auto;
+
+	}
+
+
+}

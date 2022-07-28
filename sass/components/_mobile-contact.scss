@@ -1,0 +1,26 @@
+/* Mobile contact */
+
+.mobile-contact {
+            margin-bottom: 64px;
+	&__item:not(:last-child) {
+        margin-bottom: 32px;
+	}
+
+	&__tel {
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 1.18;
+		letter-spacing: 0.02em;
+
+		color: var(--accent-color);
+	}
+
+	&__address {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.17;
+		letter-spacing: 0.02em;
+
+		color: var(--desc-text-color);
+	}
+}

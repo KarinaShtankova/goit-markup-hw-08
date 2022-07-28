@@ -1,11 +1,12 @@
 /* Button menu */
 
 .btn-menu {
-	// display: inline-flex;
+	display: inline-flex;
 	margin: 0;
 	padding: 0;
 	border: none;
 	background-color: transparent;
+	z-index: 10;
 
 	&__icon-cross {
 		display: none;
@@ -19,7 +20,7 @@
 		display: none;
 	}
 
-    @media screen and  (min-width: $tablet){
-        display: none;
-    }
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
 }

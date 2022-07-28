@@ -1,0 +1,27 @@
+/* Mobile nav */
+
+.mobile-nav {
+	// &__list {
+	// }
+
+	&__item:not(:last-child) {
+        margin-bottom: 32px;
+    } 
+
+
+	&__link {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 1.18;
+		letter-spacing: 0.02em;
+
+		color: var(--primary-text-color);
+
+	}
+
+        &__link--current{
+
+            color: var(--accent-color);
+        }
+
+}
